@@ -1,0 +1,17 @@
+spring:
+  application:
+    name:
+      coupons
+  datasource:
+    url: jdbc:postgresql://${DB_HOST}:5432/store
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        default_schema: store
+        format_sql: true
+    show-sql: true
