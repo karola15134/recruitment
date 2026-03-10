@@ -11,7 +11,6 @@ import com.coupon.api.validator.RequiredParametersValidator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tools.jackson.databind.ObjectMapper;
 
 import java.util.List;
 import java.util.Map;
@@ -23,7 +22,6 @@ public class CouponController {
 
     private final CouponService couponService;
     private final GeoIpService geoIpService;
-    private final ObjectMapper objectMapper;
     private final RequiredParametersValidator requiredParametersValidator;
 
     private static final List<String> CREATE_COUPON_PARAMS = List.of("code", "maxUses", "country");
@@ -32,11 +30,9 @@ public class CouponController {
     public CouponController(
             CouponService couponService,
             GeoIpService geoIpService,
-            ObjectMapper objectMapper,
             RequiredParametersValidator requiredParametersValidator) {
         this.couponService = couponService;
         this.geoIpService = geoIpService;
-        this.objectMapper = objectMapper;
         this.requiredParametersValidator = requiredParametersValidator;
     }
 

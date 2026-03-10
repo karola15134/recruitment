@@ -11,7 +11,7 @@
 	<groupId>com.empik</groupId>
 	<artifactId>coupon-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>oupon-api</name>
+	<name>coupon-api</name>
 	<description>Vouchers management</description>
 	<url/>
 	<licenses>
@@ -40,6 +40,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
