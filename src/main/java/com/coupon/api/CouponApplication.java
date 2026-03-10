@@ -1,13 +1,13 @@
-package com.empik.recruitment;
+package com.coupon.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RecruitmentApplication {
+public class CouponApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RecruitmentApplication.class, args);
+		SpringApplication.run(CouponApplication.class, args);
 	}
 
 }

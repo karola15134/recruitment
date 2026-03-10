@@ -1,6 +1,6 @@
-package com.empik.recruitment.repository;
+package com.coupon.api.repository;
 
-import com.empik.recruitment.dto.CouponDTO;
+import com.coupon.api.dto.CouponDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

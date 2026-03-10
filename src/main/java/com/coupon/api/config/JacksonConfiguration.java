@@ -1,4 +1,4 @@
-package com.empik.recruitment.config;
+package com.coupon.api.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;

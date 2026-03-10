@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.empik</groupId>
-	<artifactId>recruitment</artifactId>
+	<artifactId>coupon-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>recrutation</name>
+	<name>oupon-api</name>
 	<description>Vouchers management</description>
 	<url/>
 	<licenses>

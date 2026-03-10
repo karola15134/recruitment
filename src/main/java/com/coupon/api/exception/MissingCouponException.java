@@ -1,4 +1,4 @@
-package com.empik.recruitment.exception;
+package com.coupon.api.exception;
 
 public class MissingCouponException extends Exception{
 }

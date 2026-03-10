@@ -1,4 +1,4 @@
-package com.empik.recruitment.filter;
+package com.coupon.api.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
