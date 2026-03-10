@@ -1,8 +1,7 @@
-package com.empik.recruitment.validator;
+package com.coupon.api.validator;
 
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -10,7 +9,7 @@ import java.util.Map;
 public class RequiredParametersValidator {
 
     public List<String> getMissingParams(
-            Map<String,String> allParams,
+            Map<String, String> allParams,
             List<String> requiredParameters){
 
         return requiredParameters.stream()

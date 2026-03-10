@@ -1,11 +1,9 @@
-package com.empik.recruitment.service;
+package com.coupon.api.service;
 
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.AddressNotFoundException;
-import com.maxmind.geoip2.model.CountryResponse;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
 import java.io.InputStream;
 import java.net.InetAddress;
 
