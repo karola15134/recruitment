@@ -6,6 +6,7 @@ import lombok.Setter;
 import org.hibernate.annotations.UuidGenerator;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.UUID;
@@ -27,10 +28,10 @@ public class CouponDTO {
     private LocalDateTime createdAt = LocalDateTime.now();
 
     @Column(name = "max_uses", nullable = false)
-    private BigDecimal maxUses =  BigDecimal.ZERO;
+    private Long maxUses = 0L;
 
     @Column(name = "current_uses", nullable = false)
-    private BigDecimal currentUses = BigDecimal.ZERO;
+    private Long currentUses = 0L;
 
     @Column(name = "country", nullable = false, length = 2)
     private String country;
@@ -38,7 +39,7 @@ public class CouponDTO {
     public CouponDTO() {
     }
 
-    public CouponDTO(String code, BigDecimal maxUses, String country) {
+    public CouponDTO(String code, Long maxUses, String country) {
         this.code = code;
         this.maxUses = maxUses;
         this.country = country;

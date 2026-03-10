@@ -8,5 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface CouponRepository extends JpaRepository<CouponDTO, Long> {
-     Optional<CouponDTO> findByCode(String code);
+     Optional<CouponDTO> findByCodeIgnoreCase(String code);
 }
